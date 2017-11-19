@@ -1,0 +1,24 @@
+{
+  "name": "upload-photos-s3",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/*.test.js"
+  },
+  "bin": {
+    "upload-photos-s3": "./bin/upload-photos-s3.js"
+  },
+  "keywords": [],
+  "author": "Sam Matthews",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.153.0",
+    "d3-queue": "^3.0.7",
+    "minimist": "^1.2.0"
+  },
+  "devDependencies": {
+    "@mapbox/mock-aws-sdk-js": "0.0.5",
+    "tape": "^4.8.0"
+  }
+}
