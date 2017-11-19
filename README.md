@@ -1,5 +1,7 @@
 # upload-photos-s3
 
+[![Build Status](https://travis-ci.org/mapsam/upload-photos-s3.svg?branch=master)](https://travis-ci.org/mapsam/upload-photos-s3)
+
 CLI utility for uploading photos from your desktop to an S3 bucket. You can specify the bucket, prefix, and an album name. All file names will be used directly.
 
 ### Usage
