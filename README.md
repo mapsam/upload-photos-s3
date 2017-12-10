@@ -17,9 +17,9 @@ upload-photos-s3 /Volumes/camera/photos/ --album "my vacation in thailand"
 All album names will be prefixed with a date and will not include special characters or spaces (replaced with underscores). The example above will look like:
 
 ```
-11-19-2017-my_vacation_in_thailand/photo1.jpeg
-11-19-2017-my_vacation_in_thailand/photo2.jpeg
-11-19-2017-my_vacation_in_thailand/photo3.jpeg
+2017-11-19-my_vacation_in_thailand/photo1.jpeg
+2017-11-19-my_vacation_in_thailand/photo2.jpeg
+2017-11-19-my_vacation_in_thailand/photo3.jpeg
 ```
 
 Set up the following environment variables in your bash_profile:
