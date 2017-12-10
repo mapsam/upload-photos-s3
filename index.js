@@ -26,7 +26,7 @@ module.exports = function(dir, options, callback) {
   const s3 = new AWS.S3();
   const album = niceName(options.albumName);
   const date = new Date();
-  const dateKey = `${date.getUTCMonth()+1}-${date.getUTCDate()}-${date.getUTCFullYear()}`;
+  const dateKey = `${date.getUTCFullYear()}-${date.getUTCMonth()+1}-${date.getUTCDate()}`;
   let count = 0;
 
   const q = queue(10);
@@ -67,9 +67,6 @@ function niceName(string) {
   string = string.replace(/ /g,'_'); // spaces
   return string;
 }
-
-
-
 
 function error(message) {
   console.error('ERROR:', message);
