@@ -68,9 +68,6 @@ function niceName(string) {
   return string;
 }
 
-
-
-
 function error(message) {
   console.error('ERROR:', message);
   console.log(usage);
