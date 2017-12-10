@@ -11,7 +11,7 @@ const uploader = require('../index');
 test('success', assert => {
   MockAWS.stub('S3', 'putObject', (params, callback) => {
     const d = new Date();
-    const date = `${d.getUTCMonth()+1}-${d.getUTCDate()}-${d.getUTCFullYear()}`;
+    const date = `${d.getUTCFullYear()}-${d.getUTCMonth()+1}-${d.getUTCDate()}`;
     assert.ok(params.Key.indexOf(`photos/${date}-parks_and_rec/`) > -1, 'has proper key');
     assert.equal(params.Bucket, 'test-bucket', 'expected bucket name');
     callback(null, {});
